@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.user.pretendingnews">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".PretendingNewsApplication"
         android:allowBackup="true"
@@ -20,6 +22,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Main2Activity"/>
+        <activity android:name=".PretendingNewsDetailActivity"
+            android:theme="@style/AppThemeNoActionbar" />
     </application>
 
 </manifest>

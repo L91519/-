@@ -3,7 +3,6 @@ package com.example.user.pretendingnews
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
-import android.support.v7.app.AppCompatActivity
 import qiu.niorgai.StatusBarCompat
 
 /**
@@ -18,9 +17,9 @@ class SplashActivity : PretendingNewsBaseActivity() {
         StatusBarCompat.translucentStatusBar(this@SplashActivity, false)
 
         Handler().postDelayed({
-            val intent = Intent(this@SplashActivity, MainActivity::class.java)
+            val intent = Intent(this@SplashActivity, PretendingNewsDetailActivity::class.java)
             startActivity(intent)
             finish()
-        }, 7500)
+        }, 2500)
     }
 }
