@@ -34,8 +34,16 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    compile 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
     implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
+<<<<<<< HEAD
     implementation('com.github.niorgai:StatusBarCompat:2.1.4', {
+=======
+    compile 'com.github.bumptech.glide:glide:4.2.0'
+    implementation ('com.github.niorgai:StatusBarCompat:2.1.4', {
+>>>>>>> refs/remotes/origin/master
         exclude group: 'com.android.support'
     })
     implementation 'com.android.support:design:27.0.0'

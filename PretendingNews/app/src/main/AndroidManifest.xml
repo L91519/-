@@ -2,7 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.user.pretendingnews">
 
+<<<<<<< HEAD
     <uses-permission android:name="android.permission.INTERNET" />
+=======
+    <uses-permission android:name="android.permission.INTERNET"/>
+>>>>>>> refs/remotes/origin/master
 
     <application
         android:name=".PretendingNewsApplication"
@@ -21,9 +25,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity android:name=".Main2Activity"/>
         <activity android:name=".PretendingNewsDetailActivity"
             android:theme="@style/AppThemeNoActionbar" />
+=======
+        <activity android:name=".activities.Main2Activity"/>
+>>>>>>> refs/remotes/origin/master
     </application>
 
 </manifest>
