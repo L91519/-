@@ -38,4 +38,8 @@
         <item name="android:windowEnterAnimation">@anim/slide_up</item>
         <item name="android:windowExitAnimation">@anim/slide_down</item>
     </style>
+
+    <style name="CollapsedAppBar">
+        <item name="android:textSize">15.5dp</item>
+    </style>
 </resources>

@@ -3,11 +3,11 @@
     android:orientation="horizontal"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="150dp">
+    android:layout_height="120dp">
 
     <ImageView
         android:scaleType="fitXY"
-        android:background="@android:color/holo_blue_dark"
+        android:background="?attr/selectableItemBackground"
         android:id="@+id/firstImage"
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -15,7 +15,7 @@
 
     <ImageView
         android:scaleType="fitXY"
-        android:background="@android:color/darker_gray"
+        android:background="?attr/selectableItemBackground"
         android:id="@+id/secondImage"
         android:layout_width="0dp"
         android:layout_height="match_parent"

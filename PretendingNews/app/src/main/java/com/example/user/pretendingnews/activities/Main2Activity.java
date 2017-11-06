@@ -42,23 +42,21 @@ public class Main2Activity extends PretendingNewsBaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        newsRecyclerView = (RecyclerView) findViewById(R.id.mainRecyclerView);
+        newsRecyclerView = findViewById(R.id.mainRecyclerView);
         newsRecyclerView.hasFixedSize();
         newsManager = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false);
-        newsManager.hasFocus();
         newsRecyclerView.setLayoutManager(newsManager);
 
         getData();
-        getData2();
     }
 
     public void getData() {
         ArrayList<Object> items = new ArrayList<>();
 
-        Object baseItem1 = (NewsItem) new NewsItem("https://i.imgur.com/99P8kd6.jpg");
+        Object baseItem1 = new NewsItem("https://i.imgur.com/99P8kd6.jpg");
         items.add(baseItem1);
 
-        Object baseItem2 = (NormalItem) new NormalItem("https://i.imgur.com/tmlfXQr.jpg","https://cosmos-magazine.imgix.net/file/spina/photo/8178/131016_platypus_2.jpg?fit=clip&w=835");
+        Object baseItem2 = new NormalItem("https://i.imgur.com/tmlfXQr.jpg","https://cosmos-magazine.imgix.net/file/spina/photo/8178/131016_platypus_2.jpg?fit=clip&w=835");
         items.add(baseItem2);
         items.add(baseItem2);
 

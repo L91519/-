@@ -11,12 +11,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.bumptech.glide.Glide;
 import com.example.user.pretendingnews.R;
 import com.example.user.pretendingnews.holders.TitleNewsHolder;
 import com.example.user.pretendingnews.holders.NormalNewsHollder;
 import com.example.user.pretendingnews.models.NewsItem;
 import com.example.user.pretendingnews.models.NormalItem;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -55,12 +55,12 @@ public class NewsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder > 
 //            holder.titleImage =(NewsItem)items.get(position).getMainImage();
             final TitleNewsHolder newsHolder = (TitleNewsHolder) holder;
             String tmp = ((NewsItem) items.get(position)).getMainImage();
-            Glide.with(context).load(tmp).into(newsHolder.titleImage);
+            Picasso.with(context).load(tmp).into(newsHolder.titleImage);
             newsHolder.titleImage.setOnTouchListener(this);
         } else if (holder.getItemViewType() == NORMAL_TYPE) {
             final NormalNewsHollder normalNewsHolder = (NormalNewsHollder) holder;
-            Glide.with(context).load(((NormalItem) items.get(position)).getFirstImage()).into(normalNewsHolder.firstNewsImage);
-            Glide.with(context).load(((NormalItem) items.get(position)).getSecondImage()).into(normalNewsHolder.secondNewsImage);
+            Picasso.with(context).load(((NormalItem) items.get(position)).getFirstImage()).into(normalNewsHolder.firstNewsImage);
+            Picasso.with(context).load(((NormalItem) items.get(position)).getSecondImage()).into(normalNewsHolder.secondNewsImage);
             Log.d("--imageLog Check", ((NormalItem) items.get(position)).getSecondImage());
             normalNewsHolder.secondNewsImage.setOnTouchListener(this);
             normalNewsHolder.firstNewsImage.setOnTouchListener(this);

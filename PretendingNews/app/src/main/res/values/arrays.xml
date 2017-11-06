@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="data">
+        <item>트럼프 vs 김정은</item>
+        <item>트럼프 부부</item>
+        <item>트럼프 일본 방문</item>
+        <item>전쟁</item>
+        <item>한미일</item>
+        <item>멕시코 장벽</item>
+        <item>트럼프 방한</item>
+        <item>연설</item>
+        <item>문재인</item>
+        <item>김정은</item>
+        <item>미국</item>
+        <item>대한민국</item>
+        <item>집회</item>
+        <item>힐러리</item>
+        <item>아시아 5개국 순방</item>
+        <item>#하이톤</item>
+    </string-array>
+
+    <integer-array name="colors">
+        <item>@color/roseStart</item>
+        <item>@color/roseEnd</item>
+        <item>@color/blueStart</item>
+        <item>@color/blueEnd</item>
+        <item>@color/greenStart</item>
+        <item>@color/greenEnd</item>
+        <item>@color/purpleStart</item>
+        <item>@color/purpleEnd</item>
+    </integer-array>
+</resources>

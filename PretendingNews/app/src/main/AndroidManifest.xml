@@ -2,11 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.user.pretendingnews">
 
-<<<<<<< HEAD
     <uses-permission android:name="android.permission.INTERNET" />
-=======
-    <uses-permission android:name="android.permission.INTERNET"/>
->>>>>>> refs/remotes/origin/master
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
         android:name=".PretendingNewsApplication"
@@ -25,13 +23,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
-        <activity android:name=".Main2Activity"/>
+        <activity android:name=".activities.Main2Activity"/>
         <activity android:name=".PretendingNewsDetailActivity"
             android:theme="@style/AppThemeNoActionbar" />
-=======
-        <activity android:name=".activities.Main2Activity"/>
->>>>>>> refs/remotes/origin/master
+        <activity android:name=".TalkActivity"
+            android:theme="@style/AppThemeNoActionbar"
+            android:launchMode="singleTask"/>
+        <service android:name=".service.BackgroundSpeechRecognitionService"
+            android:exported="true" />
+        <activity
+            android:name="com.thefinestartist.finestwebview.FinestWebViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensor"
+            android:theme="@style/FinestWebViewTheme.Light" />
     </application>
 
 </manifest>

@@ -50,7 +50,7 @@
             android:layout_height="match_parent" />
     </android.support.v4.widget.NestedScrollView>
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/detail_activity_like_fab"
+        android:id="@+id/detail_activity_web_fab"
         android:layout_width="62dp"
         android:layout_height="62dp"
         android:layout_margin="16dp"
@@ -59,6 +59,6 @@
         app:srcCompat="@drawable/ic_language_black_24dp"
         app:layout_anchor="@id/detail_activity_appbar"
         android:scaleType="centerInside"
-        app:backgroundTint="@color/colorPrimary"
+        app:backgroundTint="@color/colorPrimaryDark"
         app:layout_anchorGravity="bottom|right|end" />
 </android.support.design.widget.CoordinatorLayout>

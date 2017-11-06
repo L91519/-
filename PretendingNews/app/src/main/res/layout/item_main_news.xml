@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
     android:orientation="horizontal"
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="300dp">
+    android:clickable="true">
 
-    <ImageView
-        android:scaleType="fitXY"
-        android:background="@android:color/holo_blue_light"
-        android:id="@+id/titleImage"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:id="@+id/main_news_item_container"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true">
+        <ImageView
+            android:id="@+id/titleImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+
 
 </LinearLayout>
